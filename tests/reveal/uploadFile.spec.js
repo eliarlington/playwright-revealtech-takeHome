@@ -9,6 +9,6 @@ test('User can upload a resume to the QA role', async ({ page }) => {
   await upload.applyForJob()
 
   // Create absolute path to the test resume file in the repo
-  const filePath = path.resolve(__dirname, '../fixtures/test-resume.pdf');
+  const filePath = path.resolve(__dirname, '../fixtures/PDF_TestPage.pdf');
   await upload.selectResume(filePath)
 });
